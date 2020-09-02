@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dan_LIX_Milos_Peric.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace Dan_LIX_Milos_Peric
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new GameViewModel(SlideCategories.Pokemon);
         }
     }
 }

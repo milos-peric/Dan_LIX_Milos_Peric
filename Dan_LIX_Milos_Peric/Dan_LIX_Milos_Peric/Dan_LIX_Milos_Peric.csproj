@@ -55,6 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\PictureModel.cs" />
+    <Compile Include="ViewModels\GameInfoViewModel.cs" />
+    <Compile Include="ViewModels\GameViewModel.cs" />
+    <Compile Include="ViewModels\ObservableObject.cs" />
+    <Compile Include="ViewModels\PictureViewModel.cs" />
+    <Compile Include="ViewModels\SlideCollectionViewModel.cs" />
+    <Compile Include="ViewModels\StartMenuViewModel.cs" />
+    <Compile Include="ViewModels\TimerViewModel.cs" />
+    <Compile Include="Views\MainMenuView.xaml.cs">
+      <DependentUpon>MainMenuView.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +78,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\MainMenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -94,11 +109,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Assets\" />
-    <Folder Include="Models\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Views\" />
+    <Resource Include="Assets\Pokemon\poke1.jpg" />
+    <Resource Include="Assets\Pokemon\poke2.jpg" />
+    <Resource Include="Assets\Pokemon\poke3.jpg" />
+    <Resource Include="Assets\Pokemon\poke4.jpg" />
+    <Resource Include="Assets\Pokemon\poke5.jpg" />
+    <Resource Include="Assets\Pokemon\poke6.jpg" />
+    <Resource Include="Assets\Pokemon\poke7.jpg" />
+    <Resource Include="Assets\Pokemon\poke8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\questionMark.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
